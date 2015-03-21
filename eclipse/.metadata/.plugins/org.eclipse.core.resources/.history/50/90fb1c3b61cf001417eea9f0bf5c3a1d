@@ -1,0 +1,73 @@
+package me.straysify.moreitems.effect;
+
+import net.minecraft.client.particle.EntityFX;
+import net.minecraft.client.renderer.Tessellator;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.world.World;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+
+@SideOnly(Side.CLIENT)
+public class EntityGSmokeEffect extends EntityFX
+{
+	private static final ResourceLocation particleTextures = new ResourceLocation("mi", "textures/particle/particles.png");
+    private int timeSinceStart;
+    /** the maximum time for the explosion */
+    private int maximumTime = 8;
+    private static final String __OBFID = "CL_00000911";
+    
+    public EntityGSmokeEffect(World world, double x, double y, double z) {
+		super(world, x, y, z);
+		this.setMaxAge(240);
+		this.setGravity(0);
+		this.setScale(2);
+	}
+
+
+
+    public void renderParticle(Tessellator p_70539_1_, float p_70539_2_, float p_70539_3_, float p_70539_4_, float p_70539_5_, float p_70539_6_, float p_70539_7_) {}
+
+    /**
+     * Called to update the entity's position/logic.
+     */
+    public void onUpdate()
+    {
+        for (int i = 0; i < 6; ++i)
+        {
+            double d0 = this.posX + (this.rand.nextDouble() - this.rand.nextDouble()) * 4.0D;
+            double d1 = this.posY + (this.rand.nextDouble() - this.rand.nextDouble()) * 4.0D;
+            double d2 = this.posZ + (this.rand.nextDouble() - this.rand.nextDouble()) * 4.0D;
+            this.worldObj.spawnParticle("explode", d0, d1, d2, (double)((float)this.timeSinceStart / (float)240), 0.0D, 0.0D);
+        }
+
+        ++this.timeSinceStart;
+
+        if (this.timeSinceStart == 240)
+        {
+            this.setDead();
+        }
+    }
+
+    public int getFXLayer()
+    {
+        return 3;
+    }
+    
+    public EntityGSmokeEffect setMaxAge(int maxAge) {
+		particleMaxAge = maxAge;
+		return this;
+		
+	}
+	
+	public EntityGSmokeEffect setGravity(float gravity) {
+		particleGravity = gravity;
+		return this;
+		
+	}
+	
+	public EntityGSmokeEffect setScale(float scale) {
+		particleScale = scale;
+		return this;
+		
+	}
+}

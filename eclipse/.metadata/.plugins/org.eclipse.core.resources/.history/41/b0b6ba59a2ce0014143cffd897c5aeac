@@ -1,0 +1,13 @@
+package me.straysify.moreitems.item;
+
+import net.minecraft.item.Item;
+
+public class ItemBulletCasing extends Item {
+
+	public ItemBulletCasing(Item goldIngot) {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+
+}

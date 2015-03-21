@@ -1,0 +1,14 @@
+package me.straysify.moreitems.block;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+
+public class BlockEndOre extends Block {
+
+	public BlockEndOre(Material rock) {
+		super(rock);
+		this.setHarvestLevel("pickaxe", 2);
+		this.setResistance(99.0F);
+	}
+
+}

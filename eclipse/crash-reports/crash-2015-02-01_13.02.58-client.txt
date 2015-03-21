@@ -1,0 +1,102 @@
+---- Minecraft Crash Report ----
+// I let you down. Sorry :(
+
+Time: 2/1/15 1:02 PM
+Description: Unexpected error
+
+java.lang.Error: Unresolved compilation problems: 
+	Vec3D cannot be resolved to a type
+	Vec3D cannot be resolved
+	Vec3D cannot be resolved to a type
+	EnumMovingObjectType cannot be resolved to a variable
+
+	at me.straysify.moreitems.item.ItemLightningStaff.onItemRightClick(ItemLightningStaff.java:17)
+	at net.minecraft.item.ItemStack.useItemRightClick(ItemStack.java:164)
+	at net.minecraft.client.multiplayer.PlayerControllerMP.sendUseItem(PlayerControllerMP.java:430)
+	at net.minecraft.client.Minecraft.func_147121_ag(Minecraft.java:1546)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:2033)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1028)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:951)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:78)
+	at GradleStart.main(GradleStart.java:45)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at me.straysify.moreitems.item.ItemLightningStaff.onItemRightClick(ItemLightningStaff.java:17)
+	at net.minecraft.item.ItemStack.useItemRightClick(ItemStack.java:164)
+	at net.minecraft.client.multiplayer.PlayerControllerMP.sendUseItem(PlayerControllerMP.java:430)
+	at net.minecraft.client.Minecraft.func_147121_ag(Minecraft.java:1546)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityClientPlayerMP['Player250'/373, l='MpServer', x=-112.36, y=68.62, z=-223.92]]
+	Chunk stats: MultiplayerChunkCache: 360, 360
+	Level seed: 0
+	Level generator: ID 01 - flat, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (-118,4,-248), Chunk: (at 10,0,8 in -8,-16; contains blocks -128,0,-256 to -113,255,-241), Region: (-1,-1; contains chunks -32,-32 to -1,-1, blocks -512,0,-512 to -1,255,-1)
+	Level time: 18651 game time, 7406 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: true), thunder time: 0 (now: false)
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: false
+	Forced entities: 36 total; [EntityItem['item.tile.dirt.default'/320, l='MpServer', x=-132.13, y=66.13, z=-275.28], EntityItem['item.tile.dirt.default'/321, l='MpServer', x=-135.13, y=66.13, z=-276.81], EntityItem['item.tile.dirt.default'/322, l='MpServer', x=-136.81, y=66.13, z=-275.75], EntityChicken['Chicken'/328, l='MpServer', x=-84.59, y=67.00, z=-280.59], EntityItem['item.tile.dirt.default'/329, l='MpServer', x=-81.13, y=66.13, z=-276.13], EntityItem['item.tile.dirt.default'/330, l='MpServer', x=-80.13, y=66.13, z=-277.13], EntityItem['item.tile.dirt.default'/331, l='MpServer', x=-84.66, y=66.13, z=-278.13], EntityItem['item.tile.dirt.default'/332, l='MpServer', x=-81.66, y=66.13, z=-279.03], EntityItem['item.tile.dirt.default'/333, l='MpServer', x=-82.13, y=66.13, z=-280.88], EntityItem['item.tile.dirt.default'/334, l='MpServer', x=-84.41, y=66.13, z=-279.34], EntityItem['item.tile.dirt.default'/335, l='MpServer', x=-83.88, y=66.13, z=-280.88], EntityClientPlayerMP['Player250'/373, l='MpServer', x=-112.36, y=68.62, z=-223.92], EntityItem['item.tile.dirt.default'/296, l='MpServer', x=-174.41, y=66.13, z=-286.19], EntityItem['item.tile.dirt.default'/297, l='MpServer', x=-168.13, y=66.13, z=-279.13], EntityItem['item.tile.dirt.default'/298, l='MpServer', x=-169.22, y=66.13, z=-279.13], EntityItem['item.tile.dirt.default'/299, l='MpServer', x=-170.88, y=66.13, z=-280.13], EntityItem['item.tile.dirt.default'/300, l='MpServer', x=-167.13, y=66.13, z=-280.13], EntityItem['item.tile.dirt.default'/301, l='MpServer', x=-166.13, y=66.13, z=-281.13], EntityItem['item.tile.dirt.default'/302, l='MpServer', x=-171.88, y=66.13, z=-281.53], EntityItem['item.tile.dirt.default'/303, l='MpServer', x=-171.72, y=66.13, z=-282.88], EntityItem['item.tile.dirt.default'/304, l='MpServer', x=-169.25, y=66.13, z=-283.09], EntityItem['item.tile.dirt.default'/305, l='MpServer', x=-170.13, y=66.13, z=-283.88], EntityItem['item.tile.dirt.default'/306, l='MpServer', x=-175.69, y=66.13, z=-287.94], EntityItem['item.tile.dirt.default'/307, l='MpServer', x=-162.13, y=66.13, z=-241.88], EntityItem['item.tile.dirt.default'/308, l='MpServer', x=-166.81, y=66.13, z=-243.88], EntityItem['item.tile.dirt.default'/309, l='MpServer', x=-165.69, y=66.13, z=-241.81], EntityItem['item.tile.dirt.default'/310, l='MpServer', x=-166.03, y=66.13, z=-243.88], EntityItem['item.tile.dirt.default'/311, l='MpServer', x=-164.28, y=66.13, z=-243.88], EntityItem['item.tile.dirt.default'/312, l='MpServer', x=-162.13, y=66.13, z=-239.88], EntityItem['item.tile.dirt.default'/313, l='MpServer', x=-140.88, y=66.13, z=-275.13], EntityItem['item.tile.dirt.default'/314, l='MpServer', x=-138.31, y=66.13, z=-274.31], EntityItem['item.tile.dirt.default'/315, l='MpServer', x=-137.13, y=66.13, z=-274.13], EntityItem['item.tile.dirt.default'/316, l='MpServer', x=-139.41, y=66.13, z=-277.81], EntityItem['item.tile.dirt.default'/317, l='MpServer', x=-138.13, y=66.13, z=-277.34], EntityItem['item.tile.dirt.default'/318, l='MpServer', x=-133.56, y=66.13, z=-273.13], EntityItem['item.tile.dirt.default'/319, l='MpServer', x=-132.69, y=66.13, z=-274.19]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:415)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2555)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:980)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:78)
+	at GradleStart.main(GradleStart.java:45)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 8 (amd64) version 6.2
+	Java Version: 1.8.0_25, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 661699016 bytes (631 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.85.1230 Minecraft Forge 10.13.2.1230 4 mods loaded, 4 mods active
+	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	FML{7.10.85.1230} [Forge Mod Loader] (forgeSrc-1.7.10-10.13.2.1230.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Forge{10.13.2.1230} [Minecraft Forge] (forgeSrc-1.7.10-10.13.2.1230.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	mi{Alpha} [More Minecraft!] (bin) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Launched Version: 1.7.10
+	LWJGL: 2.9.1
+	OpenGL: GeForce GTX 750 Ti/PCIe/SSE2 GL version 4.5.0 NVIDIA 347.25, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Anisotropic filtering is supported and maximum anisotropy is 16.
+Shaders are available because OpenGL 2.1 is supported.
+
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: []
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Anisotropic Filtering: Off (1)

@@ -1,0 +1,12 @@
+{
+  "m4shoot": {"category": "master","sounds": [{"name": "m4shoot","stream": false}]},
+  "BulletHit": {"category": "master","sounds": [{"name": "BulletHit","stream": false}]},
+  "noammo": {"category": "master","sounds": [{"name": "noammo","stream": false}]},
+  "RocketFire1": {"category": "master","sounds": [{"name": "RocketFire1","stream": false}]},
+  "m9shoot": {"category": "master","sounds": [{"name": "m9shoot","stream": false}]},
+  "bulletpass": {"category": "master","sounds": [{"name": "bulletpass","stream": false}]},
+  "deagleshoot": {"category": "master","sounds": [{"name": "deagleshoot","stream": false}]},
+  "BarretShoot": {"category": "master","sounds": [{"name": "BarretShoot","stream": false}]},
+  "smokedetonate": {"category": "master","sounds": [{"name": "smokedetonate","stream": false}]},
+  "m249shoot": {"category": "master","sounds": [{"name": "m249shoot","stream": false}]}
+  }

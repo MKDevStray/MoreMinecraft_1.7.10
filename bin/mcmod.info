@@ -1,0 +1,16 @@
+[
+{
+  "modid": "mi",
+  "name": "More Minecraft!",
+  "description": "This mod adds more of everything into minecraft.",
+  "version": "1.0",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Straysify"],
+  "credits": "Straysify",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

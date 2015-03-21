@@ -1,0 +1,12 @@
+package me.straysify.moreitems.effect;
+
+import net.minecraft.client.particle.EntityFX;
+import net.minecraft.world.World;
+
+public class EntitySmokeEffect extends EntityFX { 
+	
+	public EntitySmokeEffect(World world, double x, double y, double z) {
+		super(world, x, y, z);
+	}
+
+}

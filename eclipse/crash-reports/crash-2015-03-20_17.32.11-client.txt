@@ -1,0 +1,118 @@
+---- Minecraft Crash Report ----
+// Everything's going to plan. No, really, that was supposed to happen.
+
+Time: 3/20/15 5:32 PM
+Description: Rendering entity in world
+
+java.lang.NullPointerException: Rendering entity in world
+	at me.straysify.moreitems.entity.RenderSmokeGrenade.doRender(RenderSmokeGrenade.java:54)
+	at net.minecraft.client.renderer.entity.RenderManager.func_147939_a(RenderManager.java:300)
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntityStatic(RenderManager.java:278)
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntitySimple(RenderManager.java:251)
+	at net.minecraft.client.renderer.RenderGlobal.renderEntities(RenderGlobal.java:527)
+	at net.minecraft.client.renderer.EntityRenderer.renderWorld(EntityRenderer.java:1300)
+	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1087)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1056)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:951)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:78)
+	at GradleStart.main(GradleStart.java:45)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at me.straysify.moreitems.entity.RenderSmokeGrenade.doRender(RenderSmokeGrenade.java:54)
+
+-- Entity being rendered --
+Details:
+	Entity Type: mi.EntitySmokeGrenade (me.straysify.moreitems.entity.EntitySmokeGrenade)
+	Entity ID: 90
+	Entity Name: entity.mi.EntitySmokeGrenade.name
+	Entity's Exact location: 361.47, 69.13, 324.03
+	Entity's Block location: World: (361,69,324), Chunk: (at 9,4,4 in 22,20; contains blocks 352,0,320 to 367,255,335), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Entity's Momentum: 1.49, 0.02, 0.14
+
+-- Renderer details --
+Details:
+	Assigned renderer: me.straysify.moreitems.entity.RenderSmokeGrenade@760dc63
+	Location: -0.04,-0.11,0.13 - World: (-1,-1,0), Chunk: (at 15,-1,0 in -1,0; contains blocks -16,0,0 to -1,255,15), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+	Rotation: 84.56374
+	Delta: 0.009727716
+Stacktrace:
+	at net.minecraft.client.renderer.entity.RenderManager.func_147939_a(RenderManager.java:300)
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntityStatic(RenderManager.java:278)
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntitySimple(RenderManager.java:251)
+	at net.minecraft.client.renderer.RenderGlobal.renderEntities(RenderGlobal.java:527)
+	at net.minecraft.client.renderer.EntityRenderer.renderWorld(EntityRenderer.java:1300)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityClientPlayerMP['Player296'/274, l='MpServer', x=361.51, y=69.23, z=323.90]]
+	Chunk stats: MultiplayerChunkCache: 25, 25
+	Level seed: 0
+	Level generator: ID 04 - shadow, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (374,64,316), Chunk: (at 6,4,12 in 23,19; contains blocks 368,0,304 to 383,255,319), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 102172 game time, 19204 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 22 total; [EntityCow['Cow'/68, l='MpServer', x=345.45, y=65.00, z=305.53], EntityCow['Cow'/69, l='MpServer', x=340.16, y=64.00, z=333.16], EntityBat['Bat'/70, l='MpServer', x=344.90, y=21.95, z=366.65], EntitySquid['Squid'/104, l='MpServer', x=369.83, y=61.00, z=288.54], EntityChicken['Chicken'/105, l='MpServer', x=381.43, y=65.47, z=348.53], EntityChicken['Chicken'/106, l='MpServer', x=370.53, y=68.00, z=360.56], EntityCow['Cow'/51, l='MpServer', x=331.50, y=63.00, z=303.75], EntityCow['Cow'/52, l='MpServer', x=320.25, y=64.00, z=290.47], EntityChicken['Chicken'/117, l='MpServer', x=393.59, y=61.00, z=335.41], EntitySkeleton['Skeleton'/53, l='MpServer', x=332.59, y=43.00, z=322.50], EntityCow['Cow'/54, l='MpServer', x=335.78, y=67.00, z=320.22], EntitySquid['Squid'/86, l='MpServer', x=356.47, y=60.11, z=293.50], EntityBat['Bat'/55, l='MpServer', x=328.38, y=24.61, z=354.21], EntitySquid['Squid'/87, l='MpServer', x=352.47, y=60.40, z=291.91], EntityClientPlayerMP['Player296'/274, l='MpServer', x=361.51, y=69.23, z=323.90], EntitySkeleton['Skeleton'/56, l='MpServer', x=320.50, y=23.00, z=352.50], EntitySquid['Squid'/88, l='MpServer', x=352.77, y=60.00, z=288.61], EntityCow['Cow'/89, l='MpServer', x=367.34, y=63.00, z=312.75], EntityBat['Bat'/57, l='MpServer', x=322.75, y=24.89, z=354.75], EntitySmokeGrenade['entity.mi.EntitySmokeGrenade.name'/90, l='MpServer', x=361.47, y=69.13, z=324.03], EntityBat['Bat'/58, l='MpServer', x=319.93, y=21.00, z=358.25], EntityPig['Pig'/59, l='MpServer', x=331.13, y=67.00, z=367.84]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:415)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2555)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:973)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:78)
+	at GradleStart.main(GradleStart.java:45)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 8 (amd64) version 6.2
+	Java Version: 1.8.0_25, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 773194832 bytes (737 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 12, tallocated: 94
+	FML: MCP v9.05 FML v7.10.85.1230 Minecraft Forge 10.13.2.1230 4 mods loaded, 4 mods active
+	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	FML{7.10.85.1230} [Forge Mod Loader] (forgeSrc-1.7.10-10.13.2.1230.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Forge{10.13.2.1230} [Minecraft Forge] (forgeSrc-1.7.10-10.13.2.1230.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	mi{Release} [More Minecraft!] (bin) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Launched Version: 1.7.10
+	LWJGL: 2.9.1
+	OpenGL: GeForce GTX 750 Ti/PCIe/SSE2 GL version 4.5.0 NVIDIA 347.52, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Anisotropic filtering is supported and maximum anisotropy is 16.
+Shaders are available because OpenGL 2.1 is supported.
+
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: []
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Anisotropic Filtering: Off (1)

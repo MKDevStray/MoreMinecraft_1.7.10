@@ -1,0 +1,40 @@
+[21:38:04] [main/INFO]: Setting user: Player265
+[21:38:05] [Client thread/INFO]: LWJGL Version: 2.9.1
+[21:38:11] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:More Minecraft!
+[21:38:12] [Sound Library Loader/INFO]: Sound engine started
+[21:38:14] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
+[21:38:14] [Client thread/INFO]: Created: 512x512 textures/items-atlas
+[21:38:14] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:More Minecraft!
+[21:38:14] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
+[21:38:14] [Client thread/INFO]: Created: 512x512 textures/items-atlas
+[21:38:15] [Sound Library Loader/INFO]: Sound engine started
+[21:38:24] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[21:38:24] [Server thread/INFO]: Generating keypair
+[21:38:24] [Server thread/INFO]: Preparing start region for level 0
+[21:38:25] [Server thread/INFO]: Changing view distance to 12, from 10
+[21:38:26] [Server thread/INFO]: Player265[local:E:4f871c69] logged in with entity id 306 at (105.89778329694339, 87.0, -19.332224189505194)
+[21:38:26] [Server thread/INFO]: Player265 joined the game
+[21:38:42] [Server thread/ERROR]: "Silently" catching entity tracking error.
+net.minecraft.util.ReportedException: Adding entity to track
+	at net.minecraft.entity.EntityTracker.addEntityToTracker(EntityTracker.java:235) [EntityTracker.class:?]
+	at cpw.mods.fml.common.registry.EntityRegistry.tryTrackingEntity(EntityRegistry.java:365) [EntityRegistry.class:?]
+	at net.minecraft.entity.EntityTracker.addEntityToTracker(EntityTracker.java:66) [EntityTracker.class:?]
+	at net.minecraft.world.WorldManager.onEntityCreate(WorldManager.java:37) [WorldManager.class:?]
+	at net.minecraft.world.World.onEntityAdded(World.java:1516) [World.class:?]
+	at net.minecraft.world.WorldServer.onEntityAdded(WorldServer.java:903) [WorldServer.class:?]
+	at net.minecraft.world.World.spawnEntityInWorld(World.java:1507) [World.class:?]
+	at me.straysify.moreitems.entity.EntityCreeperExplosive.explode(EntityCreeperExplosive.java:119) [EntityCreeperExplosive.class:?]
+	at me.straysify.moreitems.entity.EntityCreeperExplosive.onUpdate(EntityCreeperExplosive.java:106) [EntityCreeperExplosive.class:?]
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:2298) [World.class:?]
+	at net.minecraft.world.WorldServer.updateEntityWithOptionalForce(WorldServer.java:684) [WorldServer.class:?]
+	at net.minecraft.world.World.updateEntity(World.java:2258) [World.class:?]
+	at net.minecraft.world.World.updateEntities(World.java:2108) [World.class:?]
+	at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:515) [WorldServer.class:?]
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:703) [MinecraftServer.class:?]
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:614) [MinecraftServer.class:?]
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:118) [IntegratedServer.class:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:485) [MinecraftServer.class:?]
+	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:752) [MinecraftServer$2.class:?]
+Caused by: java.lang.IllegalStateException: Entity is already tracked!
+	at net.minecraft.entity.EntityTracker.addEntityToTracker(EntityTracker.java:201) ~[EntityTracker.class:?]
+	... 18 more
